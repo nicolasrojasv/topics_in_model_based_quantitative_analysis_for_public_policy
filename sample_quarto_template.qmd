@@ -1,0 +1,52 @@
+---
+title: "PP433 Problem Set Template HTML"
+author: "Nicolas Rojas Vargas"
+format:
+  html:
+      self_contained: true
+      embed-resources: true
+editor: source
+---
+
+## Problem 1
+
+You can add text here.
+
+Or if you need to add bullets, you can add them with the following syntax (starting each bullet with a \*):
+
+-   Item 1
+
+-   Item 2
+
+-   Item 3
+
+### Subsection of Problem 1
+
+A subsection here
+
+#### SubSubsection of Problem 1
+
+Another layer of a subsection here. In general, placing the \# character at the start of the line will make it a heading, placing two pounds \## will make it a subheading, and so forth.
+
+## Problem Requiring R Code
+
+If a problem requires R code, you can insert a separate cell block to house this code. Using the menu for the Quarto document (not the menu for the RStudio session), there will be an option to Insert. Within that, you can navigate to Executable Cell and then select R.
+
+```{r}
+print('This is a block of R code')
+print('The code in this block will be executed and displayed in my final document')
+1 + 2
+```
+
+There are many options you can add to these code blocks. For example, the `echo=FALSE` option will make it so that the code is executed and the results are displayed, but the actual code itself will not be shown.
+
+```{r, echo=FALSE}
+2*2
+print('This text will be show, but not the actual print() function')
+```
+
+## Rendering Your File
+
+After finishing your problem set, you can select the option in the file window to "Render". This will take your file and recreate it in the desired format. Usually knitting to HTML is easy, and the header at the top of this file sets this as the output. After rendering in this way, you will have an HTML file saved on your computer which you can upload for the submission.
+
+You can also render the file in different formats. If you change the format in the heading to `docx` your file will be converted to a word document. Further, if you have familiarity with LaTeX, you can also convert to a .pdf format.
